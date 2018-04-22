@@ -1,0 +1,225 @@
+name:                miso-client-pt-zero-twenty-ghc-stub
+version:             0.1.0.0
+github:              "githubuser/miso-client-pt-zero-twenty-ghc-stub"
+license:             BSD3
+author:              "Author name here"
+maintainer:          "example@example.com"
+copyright:           "2018 Author name here"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Github at <https://github.com/githubuser/miso-client-pt-zero-twenty-ghc-stub#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- async
+- bytestring
+- containers
+- mtl
+- stm
+- text
+- transformers
+- unordered-containers
+- vector
+- filepath
+- directory
+- unix
+- show-prettyprint
+- wl-pprint-text
+- path
+- time
+- binary
+- deepseq
+- aeson
+
+- ghc-prim
+- primitive
+
+- template-haskell
+- scientific
+- integer-gmp
+- attoparsec
+- dlist >= 0.7  && < 0.9
+- hashable >= 1.2  && < 1.3
+
+- http-api-data
+- http-types
+- network-uri
+- servant
+
+library:
+  source-dirs:
+      - libs/prelude
+      - src/miso-ghcjs-client
+      - src/ghcjs-base
+      - src/ghcjs-prim
+      - src/miso-shared
+  exposed-modules:
+      - Miso.Delegate
+      - Miso.Dev
+      - Miso.Diff
+      - Miso.Effect
+      - Miso.Effect.DOM
+      - Miso.Effect.Storage
+      - Miso.Effect.XHR
+      - Miso.FFI
+      - Miso.Html.Internal
+      - Miso.String
+      - Miso.Subscription
+      - Miso.Subscription.History
+      - Miso.Subscription.Keyboard
+      - Miso.Subscription.Mouse
+      - Miso.Subscription.SSE
+      - Miso.Subscription.WebSocket
+      - Miso.Subscription.Window
+      - Miso.Types
+      - Data.JSString
+      - Data.JSString.Int
+      - Data.JSString.Internal
+      - Data.JSString.Internal.Fusion
+      - Data.JSString.Internal.Fusion.CaseMapping
+      - Data.JSString.Internal.Fusion.Common
+      - Data.JSString.Internal.Fusion.Types
+      - Data.JSString.Internal.Search
+      - Data.JSString.Internal.Type
+      - Data.JSString.Raw
+      - Data.JSString.Read
+      - Data.JSString.RealFloat
+      - Data.JSString.RegExp
+      - Data.JSString.Text
+      - GHCJS.Buffer
+      - GHCJS.Buffer.Types
+      - GHCJS.Concurrent
+      - GHCJS.Foreign
+      - GHCJS.Foreign.Callback
+      - GHCJS.Foreign.Callback.Internal
+      - GHCJS.Foreign.Export
+      - GHCJS.Foreign.Internal
+      - GHCJS.Internal.Types
+      - GHCJS.Marshal
+      - GHCJS.Marshal.Internal
+      - GHCJS.Marshal.Pure
+      - GHCJS.Nullable
+      - GHCJS.Types
+      - JavaScript.Array
+      - JavaScript.Array.Immutable
+      - JavaScript.Array.Internal
+      - JavaScript.Array.ST
+      - JavaScript.Cast
+      - JavaScript.JSON
+      - JavaScript.JSON.Types
+      - JavaScript.JSON.Types.Class
+      - JavaScript.JSON.Types.Generic
+      - JavaScript.JSON.Types.Instances
+      - JavaScript.JSON.Types.Internal
+      - JavaScript.Number
+      - JavaScript.Object
+      - JavaScript.Object.Internal
+      - JavaScript.RegExp
+      - JavaScript.String
+      - JavaScript.TypedArray
+      - JavaScript.TypedArray.ArrayBuffer
+      - JavaScript.TypedArray.ArrayBuffer.Internal
+      - JavaScript.TypedArray.ArrayBuffer.ST
+      - JavaScript.TypedArray.ArrayBuffer.Type
+      - JavaScript.TypedArray.DataView
+      - JavaScript.TypedArray.DataView.Internal
+      - JavaScript.TypedArray.DataView.ST
+      - JavaScript.TypedArray.Immutable
+      - JavaScript.TypedArray.Internal
+      - JavaScript.TypedArray.Internal.Types
+      - JavaScript.TypedArray.ST
+      - JavaScript.Web.AnimationFrame
+      - JavaScript.Web.Blob
+      - JavaScript.Web.Blob.Internal
+      - JavaScript.Web.Canvas
+      - JavaScript.Web.Canvas.ImageData
+      - JavaScript.Web.Canvas.Internal
+      - JavaScript.Web.Canvas.Pattern
+      - JavaScript.Web.Canvas.TextMetrics
+      - JavaScript.Web.Canvas.Types
+      - JavaScript.Web.CloseEvent
+      - JavaScript.Web.CloseEvent.Internal
+      - JavaScript.Web.ErrorEvent
+      - JavaScript.Web.ErrorEvent.Internal
+      - JavaScript.Web.File
+      - JavaScript.Web.FileReader
+      - JavaScript.Web.History
+      - JavaScript.Web.Location
+      - JavaScript.Web.MessageEvent
+      - JavaScript.Web.MessageEvent.Internal
+      - JavaScript.Web.Performance
+      - JavaScript.Web.Storage
+      - JavaScript.Web.Storage.Internal
+      - JavaScript.Web.StorageEvent
+      - JavaScript.Web.WebSocket
+      - JavaScript.Web.Worker
+      - JavaScript.Web.Worker.Haskell
+      - JavaScript.Web.XMLHttpRequest
+      - GHCJS.Prim
+      - GHCJS.Prim.Internal
+      - GHCJS.Prim.Internal.Build
+      - GHCJS.Prim.TH.Eval
+      - GHCJS.Prim.TH.Serialized
+      - GHCJS.Prim.TH.Types
+      - Miso.Concurrent
+      - Miso.Event
+      - Miso.Event.Decoder
+      - Miso.Event.Types
+      - Miso.Html
+      - Miso.Html.Element
+      - Miso.Html.Event
+      - Miso.Html.Property
+      - Miso.Router
+      - Miso.Svg
+      - Miso.Svg.Attribute
+      - Miso.Svg.Element
+      - Miso.Svg.Event
+      - Miso.Util
+  other-modules:
+      - Core
+      - Core.Control.Flow
+      - Core.Either.Util
+      - Core.List.Util
+      - Core.Utils
+      - Proto.Class
+      - Proto.Data
+      - Proto.System.Console
+      - Proto.Util
+      - Proto.Util.List
+      - Proto.Util.Misc
+      - Proto.Util.Text
+
+
+executables:
+  miso-client-pt-zero-twenty-ghc-stub-exe:
+    main:                Main.hs
+    source-dirs:
+        - app
+        - libs/prelude
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - miso-client-pt-zero-twenty-ghc-stub
+
+tests:
+  miso-client-pt-zero-twenty-ghc-stub-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - miso-client-pt-zero-twenty-ghc-stub
