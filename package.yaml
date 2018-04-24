@@ -64,6 +64,7 @@ library:
       - src/ghcjs-prim
       - src/miso-shared
   exposed-modules:
+      - Miso
       - Miso.Delegate
       - Miso.Dev
       - Miso.Diff
